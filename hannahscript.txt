@@ -1,0 +1,50 @@
+The purpose of "./": The "./" at the beginning is used to specify the current directory as the location of the script. It tells the shell to look for the script in the current directory.
+
+Purpose of "shebang": The shebang (#!/bin/bash) at the beginning specifies the interpreter to be used for running the script, which, in this case, is Bash. It ensures that the script is executed using the correct interpreter.
+
+**Script 2: Calculate the Sum of Two Numbers in Python**
+
+```python
+#!/usr/bin/python
+num1 = 5
+num2 = 10
+sum = num1 + num2
+print("The sum is:", sum)
+```
+
+Purpose of "./": In this case, "./" is not used because Python scripts are typically executed with the Python interpreter directly, like `python script.py`, so you don't need to specify the current directory.
+
+Purpose of "shebang": The shebang (#!/usr/bin/python) specifies that this script should be run using the Python interpreter located at /usr/bin/python.
+
+**Script 3: List Files in the Current Directory in Perl**
+
+```perl
+#!/usr/bin/perl
+opendir(DIR, ".");
+@files = readdir(DIR);
+closedir(DIR);
+foreach $file (@files) {
+    print "$file\n";
+}
+```
+
+To edit these scripts using Vim (a terminal-based text editor), you can follow these steps:
+
+1. Open a terminal.
+
+2. Navigate to the directory where the scripts are located.
+
+3. To edit a script, run:
+
+   ```bash
+   vim scriptname
+   ```
+
+   Replace "scriptname" with the name of the script you want to edit.
+
+4. Use Vim commands to edit the script. For example, press `i` to enter insert mode, make your changes, and then press `Esc` to exit insert mode.
+
+5. To save your changes and exit Vim, you can use the following commands:
+
+   - Press `:` to enter command mode.
+   - Type `wq` to write (save) and quit the editor
